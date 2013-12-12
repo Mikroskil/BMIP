@@ -30,6 +30,14 @@ public class bmi extends Activity {
   Button tambah = (Button) findViewById(R.id.button2);
   tambah.setOnClickListener(new OnClickListener() {
 
+   @Override
+   public void onClick(View arg0) {
+    int umr = Integer.parseInt(umur.getText().toString());
+    int tng = Integer.parseInt(tinggi.getText().toString());
+    int brt = Integer.parseInt(berat.getText().toString());
+    
+    int hasil = umr + tng+ brt;
+    viewHasil.setText(String.valueOf(hasil));
    }
   });
  
