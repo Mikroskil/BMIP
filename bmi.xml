@@ -20,14 +20,14 @@
     android1:layout_toRightOf="@+id/textView1" >
 
     <RadioButton
-        android1:id="@+id/radio0"
+        android1:id="@+id/radiolaki"
         android1:layout_width="wrap_content"
         android1:layout_height="wrap_content"
         android1:checked="true"
         android1:text="Laki-Laki" />
 
     <RadioButton
-        android1:id="@+id/radio1"
+        android1:id="@+id/radiopr"
         android1:layout_width="wrap_content"
         android1:layout_height="wrap_content"
         android1:text="Perempuan" />
@@ -150,5 +150,14 @@
     android1:layout_marginRight="15dp"
     android1:text="Hitung" />
 
+<TextView
+    android1:id="@+id/textView8"
+    android1:layout_width="wrap_content"
+    android1:layout_height="wrap_content"
+    android1:layout_below="@+id/button1"
+    android1:layout_centerHorizontal="true"
+    android1:layout_marginTop="60dp"
+    android1:text="Large Text"
+    android1:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
