@@ -32,7 +32,7 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="25dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/edit"
         android:layout_alignRight="@+id/button1"
         android:layout_below="@+id/edit"
