@@ -10,12 +10,6 @@ public class MyWidgetIntentReceiver extends BroadcastReceiver {
 	public static int clickCount = 0;
 	private String msg[] = null;
 
-	@Override
-	public void onReceive(Context context, Intent intent) {
-		if (intent.getAction().equals(WidgetUtils.WIDGET_UPDATE_ACTION)) {
-			updateWidgetPictureAndButtonListener(context);
-		}
-	}
 
 	private void updateWidgetPictureAndButtonListener(Context context) {
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
