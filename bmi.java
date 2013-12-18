@@ -23,7 +23,6 @@ public class bmi extends Activity implements OnClickListener{
 	Button but2;
 	EditText tinggi;
 	EditText berat;
-	EditText umur;
 	TextView viewhasil;
 	TextView komen;
 	TextView viewbbi;
@@ -39,8 +38,7 @@ public class bmi extends Activity implements OnClickListener{
 	rapr = (RadioButton) findViewById(R.id.radiopr);
 	but2 = (Button) findViewById(R.id.button2);
 	but1 = (Button) findViewById(R.id.button1);
-	umur = (EditText) findViewById(R.id.editText1);
-	tinggi = (EditText) findViewById(R.id.editText2);
+	tinggi = (EditText) findViewById(R.id.editText1);
 	berat = (EditText) findViewById(R.id.editText3);
 	viewhasil = (TextView) findViewById(R.id.textView11);
 	komen = (TextView) findViewById(R.id.textView12);
@@ -56,7 +54,6 @@ public class bmi extends Activity implements OnClickListener{
 	@Override
 	public void onClick(View v){
 		if (v == but1) {
-			umur.setText("");
 			tinggi.setText("");
 			berat.setText("");
 			viewhasil.setText("");
@@ -66,10 +63,10 @@ public class bmi extends Activity implements OnClickListener{
 		
 		else if (v == but2){
 			if  (rala.isChecked()){
-				double umr = Integer.parseInt(umur.getText().toString());
+
 				double tng = Integer.parseInt(tinggi.getText().toString());
 				double brt = Integer.parseInt(berat.getText().toString());
-				double hasil = ((brt -(0.1*brt)) / (tng/100 * tng/100))+umr-umr;
+				double hasil = ((brt -(0.1*brt)) / (tng/100 * tng/100));
 				double bbi = (tng - 100) - (0.1 * (tng-100));
 				viewhasil.setText(String.format("BMI : %.2f",hasil));
 				viewbbi.setText(String.format("Berat Ideal : %.2f",bbi));
@@ -85,10 +82,9 @@ public class bmi extends Activity implements OnClickListener{
 				}
 			
 			else if (rapr.isChecked()){
-				double umr = Integer.parseInt(umur.getText().toString());
 				double tng = Integer.parseInt(tinggi.getText().toString());
 				double brt = Integer.parseInt(berat.getText().toString());
-				double hasil = ((brt -(0.15*brt)) / (tng/100 * tng/100))+umr-umr;
+				double hasil = ((brt -(0.15*brt)) / (tng/100 * tng/100));
 				double bbi = (tng - 100) - (0.15 * (tng-100));
 				viewhasil.setText(String.format("BMI : %.2f",hasil));
 				viewbbi.setText(String.format("Berat Ideal : %.2f",bbi));
