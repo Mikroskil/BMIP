@@ -18,7 +18,7 @@
             android:layout_height="30dp"
             android:layout_centerInParent="true"
             android:background="@drawable/ic_sync_button"
-            android:text="" />
+            android:text=" " />
     </RelativeLayout>
 
     <LinearLayout
