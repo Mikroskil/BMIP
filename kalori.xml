@@ -64,6 +64,24 @@
         android1:text="Berat"
         android1:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <TextView
+        android1:id="@+id/htambah"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_toRightOf="@+id/textView8"
+        android1:text=""
+        android1:visibility="gone" />
+
+    <TextView
+        android1:id="@+id/htambah2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_marginBottom="20dp"
+        android1:text=""
+        android1:visibility="gone" />
+
     <EditText
         android1:id="@+id/editText1"
         android1:layout_width="wrap_content"
