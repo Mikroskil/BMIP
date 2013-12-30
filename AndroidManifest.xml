@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bmipro2"
     android:versionCode="1"
-    android:versionName="ujicoba" >
+    android:versionName="BMIP" >
 
     <uses-sdk
         android:minSdkVersion="7"
