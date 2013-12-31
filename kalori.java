@@ -391,4 +391,3 @@ public class kalori extends Activity{
 				startActivity(i);
 			}	
 		}
-
