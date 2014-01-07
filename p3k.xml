@@ -9,42 +9,55 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="p3k" >
 
-   <AutoCompleteTextView
-        android:id="@+id/edit"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button1"
-        android:ems="10" ></AutoCompleteTextView>
-
-    <Button
-        android:id="@+id/button1"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="45dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/edit"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/edit"
-        android:text="Cari"
-        android:textSize="@dimen/kecil2" />
-
-    <TextView
-        android:id="@+id/textView1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignLeft="@+id/edit"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/edit"
-        android:layout_marginTop="18dp"
-        android:text="TextView" />
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/list"
+        android:layout_alignRight="@+id/list"
+        android:scaleType="fitXY"
+        android:src="@drawable/kalorihsl" />
 
     <ListView
         android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1" >
-
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
     </ListView>
-    
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/kalorihsl" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/list" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+    </ScrollView>
+
 </RelativeLayout>
